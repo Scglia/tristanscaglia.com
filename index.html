@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tristan Scaglia, Front end developer</title>
+    <meta
+      name="Description"
+      content="I&#39;m a front-end developer looking to work with React or Vue in Amsterdam or remote"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: black;
+        margin: 0;
+        display: flex;
+        line-height: 1.5;
+        font-size: 1.2em;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .photo {
+        flex-grow: 1;
+        height: 100%;
+        background-image: url("me.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .wrapper {
+        height: 100vh;
+        background-color: white;
+        padding: 4rem;
+        overflow: auto;
+        position: relative;
+      }
+
+      .content {
+        min-height: calc(100vh - 8rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      h1,
+      h2 {
+        font-family: "Noto Sans JP Bold", sans-serif;
+        margin: 0;
+        width: 100%;
+        font-size: 2em;
+        line-height: 1.15em;
+      }
+
+      .blue {
+        color: rgb(44, 125, 251);
+      }
+
+      .orange {
+        color: rgb(247, 106, 0);
+      }
+
+      p,
+      a {
+        margin: 0;
+      }
+
+      .description,
+      .links {
+        margin-top: 4rem;
+      }
+
+      .link {
+        color: rgb(44, 125, 251);
+        text-decoration: none;
+      }
+
+      @media (max-width: 950px) {
+        body,
+        html {
+          height: auto;
+        }
+        body {
+          flex-direction: column;
+        }
+
+        .photo {
+          position: fixed;
+          height: 20rem;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+
+        .wrapper {
+          height: auto;
+          margin-top: 20rem;
+          z-index: 2;
+        }
+      }
+    </style>
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="https://tristanscaglia.com/favicon.png"
+    />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="favicon.png" />
+    <link href="./index_files/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div>
+          <h1>Tristan Scaglia</h1>
+          <h2 class="blue">Front-end developer</h2>
+        </div>
+
+        <p class="description">
+          I'm a front-end developer<br />
+          looking to work with React or Vue<br />
+          in <span class="orange">Amsterdam</span> or remote
+        </p>
+
+        <div class="links">
+          <div>
+            <a href="https://tristanscaglia.com/resume.html" class="link"
+              >resume</a
+            >
+          </div>
+          <div><a href="https://github.com/Scglia" class="link">github</a></div>
+          <div>
+            <a href="mailto:tristan.scaglia@gmail.com" class="link"
+              >tristan.scaglia@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo"></div>
+  </body>
+</html>
