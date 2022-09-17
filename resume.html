@@ -1,259 +1,303 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)https://tristanscaglia.com/resume -->
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Front-end developer</title>
-    <meta property="og:description" content="Resume - Tristan Scaglia" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      html {
-        font-size: 16px;
-      }
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Front-end developer</title>
+  <meta property="og:description" content="Resume - Tristan Scaglia" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: gray;
+      font-size: 22px;
+      font-family: "Roboto", sans-serif;
+      margin: 2rem 0 0;
+    }
+
+    .resume {
+      max-width: 21cm;
+      min-height: 29.7cm;
+      background-color: white;
+      margin: auto;
+      box-shadow: 0px 7px 7px -3px rgba(0, 0, 0, 0.3);
+      padding: 4rem 2rem 2rem 2rem;
+    }
+
+    section {
+      display: flex;
+      direction: row;
+    }
+
+    section>div {
+      padding: 2rem;
+    }
+
+    section>div:first-child {
+      width: 30%;
+    }
+
+    section>div:last-child {
+      width: 70%;
+    }
+
+    p,
+    .text {
+      font-size: 0.625em;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Noto Sans JP", sans-serif;
+      margin: 0;
+      width: 100%;
+    }
+
+    h1 {
+      line-height: 1em;
+      font-size: 1.375em;
+      line-height: 1.15em;
+    }
+
+    h2 {
+      line-height: 1em;
+      font-size: 1.375em;
+      color: rgb(44, 125, 251);
+    }
+
+    h3 {
+      font-size: 0.85em;
+    }
+
+    .details {
+      padding-top: 0;
+    }
+
+    .sectionTitle {
+      text-align: right;
+    }
+
+    .gray {
+      color: rgb(146, 146, 146);
+    }
+
+    .item {
+      margin-bottom: 2rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .tags {
+      margin: 0.5rem 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 4px;
+      margin-right: 6px;
+      border-radius: 4px;
+      background-color: rgba(44, 125, 251, 0.15);
+      margin-top: 2px;
+    }
+
+    @media screen and (max-width: 860px) {
       body {
-        background-color: gray;
-        font-size: 22px;
-        font-family: "Roboto", sans-serif;
-        margin: 2rem 0 0;
+        padding: 0;
+        margin: 0;
       }
+    }
 
+    @media screen and (max-width: 650px) {
       .resume {
-        max-width: 21cm;
-        min-height: 29.7cm;
-        background-color: white;
-        margin: auto;
-        box-shadow: 0px 7px 7px -3px rgba(0, 0, 0, 0.3);
-        padding: 4rem 2rem 2rem 2rem;
+        padding: 2rem 1rem 1rem 1rem;
       }
 
       section {
         display: flex;
-        direction: row;
-      }
-
-      section > div {
-        padding: 2rem;
-      }
-
-      section > div:first-child {
-        width: 30%;
-      }
-
-      section > div:last-child {
-        width: 70%;
-      }
-
-      p {
-        font-size: 0.625em;
-        margin: 0;
-        line-height: 1.5;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: "Noto Sans JP", sans-serif;
-        margin: 0;
-        width: 100%;
-      }
-
-      h1 {
-        line-height: 1em;
-        font-size: 1.375em;
-        line-height: 1.15em;
-      }
-
-      h2 {
-        line-height: 1em;
-        font-size: 1.375em;
-        color: rgb(44, 125, 251);
-      }
-
-      h3 {
-        font-size: 0.85em;
+        flex-direction: column;
       }
 
       .sectionTitle {
-        text-align: right;
+        text-align: left;
       }
 
-      .gray {
-        color: rgb(146, 146, 146);
+      section>div:first-child {
+        padding-bottom: 0;
       }
 
-      .item {
-        margin-bottom: 2rem;
+      .details>div {
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
-      .item:last-child {
-        margin-bottom: 0;
+      .details>div:first-child {
+        display: none;
+      }
+    }
+
+    @media print {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
       }
 
-      .description {
-        margin: 0.5rem 0;
+      body {
+        font-size: 16px;
       }
 
-      @media screen and (max-width: 860px) {
-        body {
-          padding: 0;
-          margin: 0;
-        }
+      .resume {
+        padding: 0;
+        box-shadow: unset;
+        /* height: 29.7cm; */
       }
+    }
+  </style>
+  <link href="./resume_files/css" rel="stylesheet" />
+</head>
 
-      @media screen and (max-width: 650px) {
-        section {
-          display: flex;
-          flex-direction: column;
-        }
-
-        .sectionTitle {
-          text-align: left;
-        }
-
-        section > div:first-child {
-          padding-bottom: 0;
-        }
-      }
-
-      @media print {
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-        }
-
-        body {
-          font-size: 16px;
-        }
-
-        .resume {
-          padding: 0;
-          box-shadow: unset;
-          height: 29.7cm;
-        }
-      }
-    </style>
-    <link href="./resume_files/css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div class="resume">
-      <section>
-        <div></div>
-        <div>
-          <h1>Tristan Scaglia</h1>
-          <h2>Front-end developer</h2>
-        </div>
-      </section>
-      <section>
-        <div></div>
-        <div>
-          <p>
-            www.tristanscaglia.com<br />
-            tristan.scaglia@gmail.com<br />
-            +31 6 40 93 06 80<br />
-            Amsterdam
+<body>
+  <div class="resume">
+    <section>
+      <div></div>
+      <div>
+        <h1>Tristan Scaglia</h1>
+        <h2>Front-end developer</h2>
+      </div>
+    </section>
+    <section class="details">
+      <!-- first column is empty -->
+      <div></div>
+      <div>
+        <p>
+          www.tristanscaglia.com<br />
+          tristan.scaglia@gmail.com<br />
+          Randstad, Netherlands
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3 class="sectionTitle">Experience</h3>
+      </div>
+      <div>
+        <div class="item">
+          <h3>
+            Front-end developer
+            <span class="gray"> freelance </span>
+          </h3>
+          <p class="description">
+            Creating web apps and websites<br />
           </p>
+          <div class="tags text"><i><span class="tag">React</span><span class="tag">Next.js</span><span
+                class="tag">UI/UX</span><span class="tag">CSS</span></i></div>
+          <p class="date gray">Since 2022</p>
         </div>
-      </section>
-      <section>
-        <div><h3 class="sectionTitle">Experience</h3></div>
-        <div>
-          <div class="item">
-            <h3>
-              Front-end developer
-              <span class="gray"> at TomTom </span>
-            </h3>
-            <p class="description">
-              Improving the TomTom consumer website through A/B tests.<br />
-              <i
-                >Mainly using: React, Next.js, Contentsquare, Optimizely,
-                SiteSpect</i
-              >
-            </p>
-            <p class="date gray">Since April 2019</p>
-          </div>
-          <div class="item">
-            <h3>
-              Front-end developer
-              <span class="gray"> at GoOut.net </span>
-            </h3>
-            <p class="description">
-              Migrating the web app to Vue.js and adding new features.<br />
-              <i>Mainly using: Vue.js, Nuxt, Less</i>
-            </p>
-            <p class="date gray">2017 - 2018</p>
-          </div>
-          <div class="item">
-            <h3>
-              Web developer
-              <span class="gray"> freelance </span>
-            </h3>
-            <p class="description">
-              Making websites and small web apps.<br />
-              <i>Mainly using: Wordpress, Angular, MongoDB, Node</i>
-            </p>
-            <p class="date gray">2014 - 2016</p>
-          </div>
-          <div class="item">
-            <h3>
-              Web developer
-              <span class="gray"> at Destination Merveilles </span>
-            </h3>
-            <p class="description">
-              Updating the agency's website, making regular newsletters,
-              creating microsites<br />
-              <i>Mainly using: PHP (Wordpress), jQuery</i>
-            </p>
-            <p class="date gray">2013</p>
-          </div>
-          <div class="item">
-            <h3>
-              Web developer
-              <span class="gray"> at G7 Design </span>
-            </h3>
-            <p class="description">
-              Making and maintaining websites for a communication agency<br />
-              <i>Mainly using: PHP, jQuery, SQL</i>
-            </p>
-            <p class="date gray">2012</p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div><h3 class="sectionTitle">Skills</h3></div>
-        <div>
-          <p>
-            Javascript, React (or Vue), Next.js, Webpack, Redux, ES6, Babel<br />
-            HTML5, CSS (Bem, Less), Git<br />
-            A/B testing, Design (UX, UI), accessibility
+        <div class="item">
+          <h3>
+            Front-end developer
+            <span class="gray"> at TomTom </span>
+          </h3>
+          <p class="description">
+            Improving the TomTom consumer website through A/B tests.<br />
           </p>
+          <div class="tags text"><i><span class="tag">React</span><span class="tag">Next.js</span><span
+                class="tag">Contentsquare</span><span class="tag">Optimizely</span><span
+                class="tag">SiteSpect</span></i></div>
+          <p class="date gray">2019 - 2022</p>
         </div>
-      </section>
-      <section>
-        <div><h3 class="sectionTitle">Education</h3></div>
-        <div>
-          <div class="item">
-            <h3>
-              DUT Informatique <span class="gray"> at Université de Nice</span>
-            </h3>
-            <p class="description">2 years degree in computer science</p>
-            <p class="date gray">2012</p>
-          </div>
+        <div class="item">
+          <h3>
+            Front-end developer
+            <span class="gray"> at GoOut.net </span>
+          </h3>
+          <p class="description">
+            Migrating the web app to Vue.js and adding new features.<br />
+          </p>
+          <div class="tags text"><i><span class="tag">Vue.js</span><span class="tag">Nuxt</span><span
+                class="tag">Less</span></i></div>
+          <p class="date gray">2017 - 2018</p>
         </div>
-      </section>
-    </div>
-  </body>
+        <div class="item">
+          <h3>
+            Web developer
+            <span class="gray"> freelance </span>
+          </h3>
+          <p class="description">
+            Making websites and small web apps.<br />
+          </p>
+          <div class="tags text"><i><span class="tag">Wordpress</span><span class="tag">Angular</span><span
+                class="tag">MongoDB</span><span class="tag">Node</span></i></div>
+          <p class="date gray">2014 - 2016</p>
+        </div>
+        <div class="item">
+          <h3>
+            Web developer
+            <span class="gray"> at Destination Merveilles </span>
+          </h3>
+          <p class="description">
+            Updating the agency's website, making regular newsletters,
+            creating microsites<br />
+          </p>
+          <div class="tags text"><i><span class="tag">PHP (Wordpress)</span><span class="tag">jQuery</span></i></div>
+          <p class="date gray">2013</p>
+        </div>
+        <div class="item">
+          <h3>
+            Web developer
+            <span class="gray"> at G7 Design </span>
+          </h3>
+          <p class="description">
+            Making and maintaining websites for a communication agency<br />
+          </p>
+          <div class="tags text"><i><span class="tag">PHP</span><span class="tag">jQuery</span><span
+                class="tag">SQL</span></i></div>
+          <p class="date gray">2012</p>
+        </div>
+    </section>
+    <section>
+      <div>
+        <h3 class="sectionTitle">Skills</h3>
+      </div>
+      <div>
+        <p>
+          Javascript, React (or Vue) and its ecosystem, Next.js, Webpack,
+          Redux<br />
+          HTML5, CSS (Bem, Less, CSS-in-JS), Git<br />
+          A/B testing, Design (UX, UI), Accessibility
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h3 class="sectionTitle">Education</h3>
+      </div>
+      <div>
+        <div class="item">
+          <h3>
+            DUT Informatique <span class="gray"> at Université de Nice</span>
+          </h3>
+          <p class="description">2 years degree in computer science</p>
+          <p class="date gray">2012</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
